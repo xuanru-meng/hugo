@@ -18,7 +18,7 @@ export const fetchGuideResponse = async (query, locationName, latitude, longitud
   };
   
   try {
-    const response = await fetch(`https://voice-view-backend-ef6f06a14ec9.herokuapp.com/answer?query=${encodeURIComponent(query)}`, {
+    const response = await fetch(`https://voice-view-backend.onrender.com/answer?query=${encodeURIComponent(query)}`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
